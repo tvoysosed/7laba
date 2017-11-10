@@ -12,7 +12,7 @@ string str;
 Node *first = new Node{str, nullptr}; 
 Node *last = nullptr; 
 while (true) { 
-cin » str; 
+cin >> str; 
 if (str == "end") break; 
 Node *curr = new Node{str, nullptr};
 if (first->next == nullptr) first->next = curr; 
@@ -24,7 +24,7 @@ last = curr;
 Node *curr = nullptr; 
 curr = first; 
 do { 
-cout « curr->str « endl; 
+cout << curr->str << endl; 
 curr = curr->next;
 } while (curr != nullptr); 
 }
